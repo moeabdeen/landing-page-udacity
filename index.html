@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Landing Page Project</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" >
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main__hero">
+        <h1>Yoko Naro!</h1>
+        <p>The Japanese words for <em style=color:yellow>Getting better!</em> In this case, I am using it in the context of getting better in different aspects of life; 
+          Learning, finances, entertainment and travel wise </p>
+      </header>
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section id="section1" data-nav="Health">
+        <div class="landing__container">
+          <h2>Health & Fitness</h2>
+          <p>
+            This section is where we set health and fitness habits and goals. This is where we define where we are at and what we need to do to get to where we want to go!
+          </p>
+                
+          <ul>
+              <li>Stats</li>
+              <li>Current</li>
+              <li>Goal</li>
+          </ul>
+
+        </div>
+      </section>
+      <section id="section2" data-nav="L&D">
+        <div class="landing__container">
+          <h2>L&D</h2>
+          <p>
+            This is where we define our learning goals and any skills we have or need to acquire now and in the future.
+          </p>
+          <ul>
+              <li>Education</li>
+                  <ul>
+                      <li>List</li>
+                      <li>Current/WIP</li>
+                      <li>Goal</li>
+                  </ul>
+              <li>Skills</li>
+                  <ul>
+                      <li>List</li>
+                      <li>Current/WIP</li>
+                      <li>Goal</li>
+                  </ul>
+          </ul>
+        </div>
+      </section>
+      <section id="section3" data-nav="Finances">
+        <div class="landing__container">
+          <h2>Finances</h2>
+          <p>
+            This is where we decide how filthy rich we wanna be and draw the path to get there!
+          </p>
+                    <ul>
+                        <li>Current</li>
+                        <li>Upcoming</li>
+                        <li>Potential</li>
+                    </ul>
+
+        </div>
+      </section>
+      <section id="section4" data-nav="Fun">
+        <div class="landing__container">
+          <h2>Entertainment</h2>
+          <p>
+            This is where we plan the fun parts of life
+          </p>
+                    <ul>
+                        <li>List</li>
+                        <li>Checked</li>
+                        <li>Upcoming</li>
+                    </ul>
+        </div>
+      </section>
+      <section id="section5" data-nav="Travel">
+        <div class="landing__container">
+            <h2>Travel Plans</h2>
+            <p>This is where we plan the fun parts of life</p>
+  
+            <ul>
+                <li>List</li>
+                <li>Checked</li>
+                <li>Upcoming</li>
+            </ul>
+        
+        </div>
+      </section>
+
+    </main>
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+      <div id="topBtn">TOP</div>
+    </footer>
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
